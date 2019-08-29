@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="git.openembedded.org"
+           alias="origin"
+           fetch="git://git.openembedded.org" />
+
+  <remote  name="git.yoctoproject.org"
+           alias="origin"
+           fetch="git://git.yoctoproject.org" />
+
+  <remote  name="github.com"
+           alias="origin"
+           fetch="https://github.com" />
+
+  <remote  name="freedesktop"
+           alias="origin"
+           fetch="https://gitlab.freedesktop.org/" />
+
+  <project name="openembedded-core"
+           remote="git.openembedded.org"
+           path="intel-embedded-system-enabling-pre"
+           revision="952bfcc3f4b9ee5ba584da0f991f95e80654355a" >
+  </project>
+
+  <project name="meta-openembedded"
+           remote="git.openembedded.org"
+           path="intel-embedded-system-enabling-pre/meta-openembedded"
+           revision="8d5dcd6522e9d15e68637b6d7dda0401f9bb91d0" >
+  </project>
+
+  <project name="bitbake"
+           remote="git.openembedded.org"
+           path="intel-embedded-system-enabling-pre/bitbake"
+           revision="34ed28a412af642a993642c14bd8b95d5ef22cd8" >
+  </project>
+
+  <project name="meta-intel"
+           remote="git.yoctoproject.org"
+           path="intel-embedded-system-enabling-pre/meta-intel"
+           revision="f17dfeee1da8749fc4eec6892bc7578864c3664f" >
+  </project>
+
+  <project name="meta-dpdk"
+           remote="git.yoctoproject.org"
+           path="intel-embedded-system-enabling-pre/meta-dpdk"
+           revision="c8c30c2c4e2f36b4a55a69a475fe774015423705" >
+  </project>
+
+  <project name="meta-virtualization"
+           remote="git.yoctoproject.org"
+           path="intel-embedded-system-enabling-pre/meta-virtualization"
+           revision="2c6f451aa2b954c0cab2052d4f4635618050f648" >
+  </project>
+
+  <project name="mendersoftware/meta-mender.git"
+           remote="github.com"
+           path="intel-embedded-system-enabling-pre/meta-mender"
+           revision="0a2acebd05ddbeeccf846f68d738c047f6bf2af9">
+  </project>
+
+  <project name="intel/IOTG-Yocto-ESE-Main.git"
+           remote="github.com"
+           path="intel-embedded-system-enabling-pre/meta-intel-embedded-system-enabling-pre/meta-intel-ese-main-pre"
+           revision="refs/heads/master" >
+  </project>
+
+  <project name="intel/IOTG-Yocto-ESE.git"
+           remote="github.com"
+           path="intel-embedded-system-enabling-pre/meta-intel-embedded-system-enabling-pre/meta-intel-ese-pre"
+           revision="refs/heads/master" >
+  </project>
+
+  <project name="meta-tlk"
+           remote="git.yoctoproject.org"
+           path="intel-embedded-system-enabling-pre/meta-tlk"
+           revision="f737ffa2f607f61a6f9f5490758797c923f4ee44" >
+  <linkfile src="recipes-kernel/linux/linux-intel_%.bbappend" dest="intel-embedded-system-enabling-pre/meta-tlk/recipes-kernel/linux/linux-intel-dev_%.bbappend" />
+  </project>
+
+  <project name="meta-security"
+           remote="git.yoctoproject.org"
+           path="intel-embedded-system-enabling-pre/meta-security"
+           revision="4f7be0d252f68d8e8d442a7ed8c6e8a852872d28" >
+  </project>
+
+  <project name="jiazhang0/meta-secure-core.git"
+           remote="github.com"
+           path="intel-embedded-system-enabling-pre/meta-secure-core"
+           revision="73bc9f68f91b28e5e4300f76a622c761053b7c32" >
+  </project>
+
+  <project name="intel/meta-intel-sgx.git"
+           remote="github.com"
+           path="intel-embedded-system-enabling-pre/meta-intel-embedded-system-enabling-pre/meta-intel-sgx"
+           revision="7b2495f8975a3103463b1ee582c3e04ba67bfe55" >
+  </project>
+
+  <project name="intel/IOTG-Yocto-ESE-Build.git"
+           remote="github.com"
+           path="build"
+           revision="refs/heads/master">
+  </project>
+
+  <project name="intel/linux-intel-lts.git"
+           remote="github.com"
+           path="managed/linux-sources-rt"
+           revision="d6dc301c71aea6098e5e19ef3f265d0ba9981167" >
+  </project>
+
+  <project name="intel/mainline-tracking.git"
+           remote="github.com"
+           path="managed/linux-sources-mainline"
+           revision="e8bab594ace08c4c083e4e15464de3383e0cde30" >
+  </project>
+
+  <project name="tpm2-software/tpm2-tools.git"
+           remote="github.com"
+           path="managed/tpm2-tools"
+           revision="e3a2fcf72092819582fd78bdfa8256c3387af33d"
+           upstream="refs/heads/master" >
+  </project>
+
+  <project name="mesa/drm.git"
+           remote="freedesktop"
+           path="managed/libdrm"
+           revision="14922551aa33e7592d2421cc89cf20a860a65310" >
+  </project>
+
+  <project name="mesa/mesa.git"
+           remote="freedesktop"
+           path="managed/mesa"
+           revision="5e38db0c47ca57c6e904f44d0d0e9ef299d14f3c" >
+  </project>
+
+</manifest>
