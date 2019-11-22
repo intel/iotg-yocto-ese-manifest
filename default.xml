@@ -35,7 +35,7 @@
   <project name="bitbake"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/bitbake"
-           revision="75d6648f232a06b99c54a1e33324a7fc1cd15b38" >
+           revision="4ce50bbd34eefeabfeca89a6a66c71598d3c58f6" >
   </project>
 
   <project name="meta-intel"
@@ -65,7 +65,7 @@
   <project name="otcshare/IOTG-Yocto-ESE-Main.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
-           revision="146dd7438177f0e15d3d23487cb2d8b00cf5cd54" >
+           revision="0b79081e3ad04686b0f64b48750014cf9f7f746b" >
   </project>
 
   <project name="otcshare/IOTG-Yocto-ESE.git"
@@ -87,12 +87,6 @@
            revision="4f7be0d252f68d8e8d442a7ed8c6e8a852872d28" >
   </project>
 
-  <project name="jiazhang0/meta-secure-core.git"
-           remote="github.com"
-           path="intel-embedded-system-enabling/meta-secure-core"
-           revision="51b5089a605b09d72a68060c5a42fcc5a818a630" >
-  </project>
-
   <project name="intel/meta-intel-sgx.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-sgx"
@@ -102,7 +96,7 @@
   <project name="otcshare/IOTG-Yocto-ESE-Build.git"
            remote="ssh-github"
            path="build"
-           revision="eaa5c1e935a46774cf99fff0143350d45bddda77">
+           revision="893626754ed2ca5be8e4cb58b82664e5ff877cf9">
   </project>
 
   <project name="intel/mainline-tracking.git"
@@ -114,14 +108,7 @@
   <project name="intel/mainline-tracking.git"
            remote="github.com"
            path="managed/linux-sources-mainline-5.4"
-           revision="fd6857d17fe6aa5a51e9350dca9113fb1cf90462" >
-  </project>
-
-  <project name="tpm2-software/tpm2-tools.git"
-           remote="github.com"
-           path="managed/tpm2-tools"
-           revision="e3a2fcf72092819582fd78bdfa8256c3387af33d"
-           upstream="refs/heads/master" >
+           revision="da59b8631297b84280c3c1ef63a5bf551fa66700" >
   </project>
 
   <project name="mesa/drm.git"
@@ -133,7 +120,7 @@
   <project name="mesa/mesa.git"
            remote="freedesktop"
            path="managed/mesa"
-           revision="ddc588ff71ef9fdb87ef476f91bc716383dbeb77" >
+           revision="882ca6dfb0f3d17e0f8bc917307d915ab1718069" >
   </project>
 
   <project name="kraj/meta-clang.git"
