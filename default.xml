@@ -41,7 +41,7 @@
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="6bd7b2edafe90e61a3a52cd089432080b82a7891" >
+           revision="ca26bed652722167b2dbe0042cfc2406029e9c6c" >
   </project>
 
   <project name="meta-dpdk"
@@ -53,7 +53,7 @@
   <project name="meta-virtualization"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-virtualization"
-           revision="2c6f451aa2b954c0cab2052d4f4635618050f648" >
+           revision="e1f24ea8e77f8a3c3266264dd71417c8f9661f89" >
   </project>
 
   <project name="mendersoftware/meta-mender.git"
@@ -65,7 +65,7 @@
   <project name="otcshare/IOTG-Yocto-ESE-Main.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
-           revision="0b79081e3ad04686b0f64b48750014cf9f7f746b" >
+           revision="2a4888848f49257765b9302e1afb79529bb7548b" >
   </project>
 
   <project name="otcshare/IOTG-Yocto-ESE.git"
@@ -108,19 +108,19 @@
   <project name="intel/mainline-tracking.git"
            remote="github.com"
            path="managed/linux-sources-mainline-5.4"
-           revision="da59b8631297b84280c3c1ef63a5bf551fa66700" >
+           revision="efcb20d853e2fc4cda2a7f0f04adb2cefb691dd1" >
   </project>
 
   <project name="mesa/drm.git"
            remote="freedesktop"
            path="managed/libdrm"
-           revision="f057dc91e93ae21e11ab48a26127d569972f3eae" >
+           revision="a39c34e64ad83e134fe276ead1bad8bffb4d454e" >
   </project>
 
   <project name="mesa/mesa.git"
            remote="freedesktop"
            path="managed/mesa"
-           revision="882ca6dfb0f3d17e0f8bc917307d915ab1718069" >
+           revision="780c937a5ded1a4586ba4160020200eebe57b311" >
   </project>
 
   <project name="kraj/meta-clang.git"
