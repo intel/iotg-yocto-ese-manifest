@@ -38,14 +38,11 @@ $ repo init -u https://github.com/otcshare/IOTG-Yocto-ESE-Manifest.git -b refs/h
 3. Pull the repository meta-layers (-j4 for simultaneous downloads, increase for more).
 $ repo sync -c -j8 --force-sync
 
-4. Bitbake is unable to work directly with a detached head, make a branch of whatever that is checked out
-$ repo forall managed/* -c git branch -f BUILD HEAD
-
-5. To start build process
+4. To start build process
 $ cd <work_dir>/build
 $ . ../intel-embedded-system-enabling-pre/oe-init-build-env .
 
-6. Run bitbake compilation
+5. Run bitbake compilation
 $ bitbake multiconfig:x86:core-image-sato-sdk
 
 To change provided kernel to your preferred kernel
