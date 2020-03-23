@@ -47,7 +47,7 @@
   <project name="meta-virtualization"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-virtualization"
-           revision="561b597d4ba91dd36147e1af81bd1edc2d6636db" >
+           revision="3ab5647d7cfa9d46a155be80934e0bc8a44dbf4b" >
   </project>
 
   <project name="mendersoftware/meta-mender.git"
@@ -65,7 +65,7 @@
   <project name="otcshare/IOTG-Yocto-ESE-Main.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
-           revision="9bc0b1eb09b4bb36844f3a5305cf29d51c8a1adc" >
+           revision="5179207e53b197a0d13a2f39853e3dc2e1e9db48" >
   </project>
 
   <project name="otcshare/IOTG-Yocto-ESE.git"
@@ -77,13 +77,13 @@
   <project name="otcshare/IOTG-Yocto-ESE-BSP.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp"
-           revision="757d8d644fff0260e018bc112faaa0e07d2e05a4" >
+           revision="77fe7125f7be9984a5c29c59c6a9f4c16ed6009c" >
   </project>
 
   <project name="meta-security"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-security"
-           revision="17b0f4264743e3849181215d2a28711278636b0b" >
+           revision="0d8cee5029bcb47c3f72e059a3cca3a342857c99" >
   </project>
 
   <project name="intel/meta-intel-sgx.git"
@@ -101,7 +101,7 @@
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-5.4"
-           revision="b739a35ca7a7527e50149b8d1d1ea4424afef956" >
+           revision="0d758b0d30f387630ee28d912b7516611a07c841" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
@@ -119,7 +119,7 @@
   <project name="mesa/mesa.git"
            remote="freedesktop"
            path="managed/mesa"
-           revision="46a8cab58bc8fa897c66831b17614da4e9a36706" >
+           revision="dab7a4d82c1a490c93da3c19d34097732ae8a15c" >
   </project>
 
   <project name="kraj/meta-clang.git"
