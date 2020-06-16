@@ -62,19 +62,19 @@
            revision="6a9c0acbad3b9ac6b1e129c7c3c7b1648f4e4855">
   </project>
 
-  <project name="otcshare/IOTG-Yocto-ESE-Main.git"
+  <project name="intel/iotg-yocto-ese-main.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
            revision="bade4f95afcc11d87ee448e11c562f90680d01d6" >
   </project>
 
-  <project name="otcshare/IOTG-Yocto-ESE.git"
+  <project name="intel/iotg-yocto-ese.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese"
            revision="6dddb06eb563c224b6c47e39e8d5324b080934cf" >
   </project>
 
-  <project name="otcshare/IOTG-Yocto-ESE-BSP.git"
+  <project name="intel/iotg-yocto-ese-bsp.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp"
            revision="456f4398bde62b22a4764efe084c2708fa29bae1" >
@@ -92,10 +92,10 @@
            revision="9a43b4cb37fc5ee2a47a7ac84c53986ab9e9ee28" >
   </project>
 
-  <project name="otcshare/IOTG-Yocto-ESE-Build.git"
+  <project name="intel/iotg-yocto-ese-build.git"
            remote="ssh-github"
            path="build"
-           revision="6b3130a56a6ce905a0a54c3462c36bd60e00163b">
+           revision="db4245fd4b3bac8b3dc3d1947e7f6ea8c93f2531">
   </project>
 
   <project name="intel/linux-intel-lts.git"
