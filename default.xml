@@ -23,7 +23,7 @@
   <project name="openembedded-core"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling"
-           revision="c940e4b858d6be28b198770768117ecc098fa0d3" >
+           revision="b63955977ebbf9fba291faa1b30c8dba9bd52869" >
   </project>
 
   <project name="meta-openembedded"
@@ -41,31 +41,31 @@
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="faced19dda5332cce9164903b250db5aa9b86259" >
+           revision="49a0bfe118bfba37e9c02ff6d2af039c4c20b2ff" >
   </project>
 
   <project name="meta-virtualization"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-virtualization"
-           revision="561b597d4ba91dd36147e1af81bd1edc2d6636db" >
+           revision="1bb515609594215aaf950555211e18c6c9a8e308" >
   </project>
 
   <project name="mendersoftware/meta-mender.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-mender"
-           revision="d0d798bfdaed61cd13e2ec385f0bb2fe98939e3a">
+           revision="d0d798bfdaed61cd13e2ec385f0bb2fe98939e3a" >
   </project>
 
   <project name="meta-qt5/meta-qt5.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-qt5"
-           revision="6a9c0acbad3b9ac6b1e129c7c3c7b1648f4e4855">
+           revision="852e279a45da2b68719fecdaad3573b2ada9558c" >
   </project>
 
   <project name="intel/iotg-yocto-ese-main.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
-           revision="bade4f95afcc11d87ee448e11c562f90680d01d6" >
+           revision="dac6b267232e2a4a1bbdac9f653e3e023d08dff7" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
@@ -77,13 +77,13 @@
   <project name="intel/iotg-yocto-ese-bsp.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp"
-           revision="456f4398bde62b22a4764efe084c2708fa29bae1" >
+           revision="872c93065a091802acd12abb61acb61417ffd8da" >
   </project>
 
   <project name="meta-security"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-security"
-           revision="4229f5025e628d48665be95880fe1e458df5dda3" >
+           revision="ecd8c30af6b1b957b4fa814d3f25c40f060b3ac1" >
   </project>
 
   <project name="intel/meta-intel-sgx.git"
@@ -95,31 +95,31 @@
   <project name="intel/iotg-yocto-ese-build.git"
            remote="ssh-github"
            path="build"
-           revision="db4245fd4b3bac8b3dc3d1947e7f6ea8c93f2531">
+           revision="2f4c2b7151f9cd63fc964ddbe601687bfd156da5" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-5.4"
-           revision="da4a79b08a8919b5fb0576c959f92aa5c2b66d20" >
+           revision="2128351fa067ab2e14ca1862445925dec1b33159" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-rt-5.4"
-           revision="e34a6de24235eb68a26b1ee175cc55482b75fcb6" >
+           revision="ddb02394d5c1e41e8d0ef2b67f256e0fcf57c2eb" >
   </project>
 
   <project name="mesa/drm.git"
            remote="freedesktop"
            path="managed/libdrm"
-           revision="b9bf42d3e1969248b18f87a2b7973901ffb79b36" >
+           revision="c997baf590de48ac5fc52a6e2df806e0a6f3acfc" >
   </project>
 
   <project name="mesa/mesa.git"
            remote="freedesktop"
            path="managed/mesa"
-           revision="7b9f1b6ef755a07abcd396b42948ae6bf0a569a6" >
+           revision="78c46c2126109dc5c1cb2ff315aecdd69b93d1f5" >
   </project>
 
   <project name="kraj/meta-clang.git"
@@ -131,6 +131,6 @@
   <project name="meta-dpdk"
            path="intel-embedded-system-enabling/meta-dpdk"
            remote="git.yoctoproject.org"
-           revision="2659f4d79167a5480cb5d0e4e8b897f50a90a9cc">
+           revision="2b077a7ece9b4f2b9c5b3586149b4eef0e383e3e" >
   </project>
 </manifest>
