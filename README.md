@@ -8,14 +8,17 @@ corresponding sections below for details.
 
 Notes
 =====
+
 There are recent changes in the BSP:
-   a. Pre-generated keys for Secure Boot.
-      Please contact your Intel representative on building the BSP with the pre-generated keys. 
-   b. Libva SRC_URI updated to a new link.
-      $ vi <work_dir>/intel-embedded-system-enabling/meta-intel-embedded-system-enabling/ \
-        meta-intel-ese-main/recipes-multimedia/libva/libva_2.9.0.pre1.bb 
- 
-      #Update SRC_URI to the link shown below 
+
+    a. Pre-generated keys for Secure Boot.
+       Please contact your Intel representative on building the BSP with the pre-generated keys. 
+
+    b. Libva SRC_URI updated to a new link.
+
+    $ vi <work_dir>/intel-embedded-system-enabling/meta-intel-embedded-system-enabling/ \
+      meta-intel-ese-main/recipes-multimedia/libva/libva_2.9.0.pre1.bb 
+    # Update SRC_URI to the link shown below 
       SRC_URI = "git://github.com/intel/libva.git;protocol=https;nobranch=1"  
 
 Table of Contents
