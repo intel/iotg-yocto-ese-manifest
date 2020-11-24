@@ -23,31 +23,31 @@
   <project name="openembedded-core"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling"
-           revision="9cad716656b427e625a470a820b8b29b1ec9f976" >
+           revision="210ebed1e9c2285d6e457bf03d1f1a1f3ddc7fda" >
   </project>
 
   <project name="meta-openembedded"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/meta-openembedded"
-           revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b" >
+           revision="d7b41ced4b9a9a68083b0fcceff3b226298cff8b" >
   </project>
 
   <project name="bitbake"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/bitbake"
-           revision="1d4f3a5cb64273508357cddc32cc5367e7807191" >
+           revision="838a89141fd6a75da9f982ad2b035e823b692d2a" >
   </project>
 
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="d9942d4c3a710406b051852de7232db03c297f4e" >
+           revision="a01cbe26e343f2c5cd42e134b05d3e99c73ad9e6" >
   </project>
 
   <project name="meta-virtualization"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-virtualization"
-           revision="48ec1b49871fef7d331ac1d0680a48d362c7482b" >
+           revision="ff997b6b3ba800978546098ab3cdaa113b6695e1" >
   </project>
 
   <project name="mendersoftware/meta-mender.git"
@@ -59,31 +59,31 @@
   <project name="meta-qt5/meta-qt5.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-qt5"
-           revision="1861b68525dc8566be6bc8d70e4359a3b589e4ca" >
+           revision="0e7015f7a86dda995a39662edbb5c26da647c496" >
   </project>
 
   <project name="intel/iotg-yocto-ese-main.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
-           revision="2e813636f6ac8fb19b0f63ded60d574d9c2fc462" >
+           revision="54168f03bdf040ba860a3099f6f9da1e7126c8af" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese"
-           revision="6dddb06eb563c224b6c47e39e8d5324b080934cf" >
+           revision="537f033598d94926890bb54f1fec912bcb2bf0e9" >
   </project>
 
   <project name="intel/iotg-yocto-ese-bsp.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp"
-           revision="55418395b50ac7391329f30e255851968710de37" >
+           revision="c2d6782f29d743241359967abcf0dff5b2bcbdec" >
   </project>
 
   <project name="meta-security"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-security"
-           revision="440c37f0b623ccc0aa0328613908608d6362adda" >
+           revision="213e1f95b0530fb0b361d0b3c820d719d94b3916" >
   </project>
 
   <project name="intel/meta-intel-sgx.git"
@@ -95,19 +95,19 @@
   <project name="intel/iotg-yocto-ese-build.git"
            remote="ssh-github"
            path="build"
-           revision="928132abc4d0ea5bfce2cb042ce723aafc9c10f1" >
+           revision="f11688bf180beedf51d37da7eced258c6598825c" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-5.4"
-           revision="fb165c21e3deb44542074fcf59fc5afeba4052d6" >
+           revision="0ac3c1bb4f63b70028ec259cb0db958681267128" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-rt-5.4"
-           revision="3747758c5c6c5b1b210e88c4bdb62e09c033c192" >
+           revision="01485c410c9539722b37c6432e3ad0616d2a1750" >
   </project>
 
   <project name="mesa/drm.git"
@@ -119,18 +119,18 @@
   <project name="mesa/mesa.git"
            remote="freedesktop"
            path="managed/mesa"
-           revision="e394ff9b5f8da5a9579d0a96c371cec814caf10c" >
+           revision="207219d4356786e8bb4b5f19c67322ee82874967" >
   </project>
 
   <project name="kraj/meta-clang.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-clang"
-           revision="d87c406c0f54e0e1ad4fb6aa2d0ecba93136139d" >
+           revision="88685736c4a2f27bc72e398c66d5acc4e5628ffa" >
   </project>
 
   <project name="meta-dpdk"
            path="intel-embedded-system-enabling/meta-dpdk"
            remote="git.yoctoproject.org"
-           revision="25e754eaf1ae438ccd75d1ee991d197321c1028d" >
+           revision="7a9ee23de79a631127ed5ca3c45e08ec876eda98" >
   </project>
 </manifest>
