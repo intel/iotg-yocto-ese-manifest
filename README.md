@@ -83,7 +83,7 @@ c. Build Steps
 
 Make sure to have "repo" and the toolchain dependencies are set before proceed.
 All Yocto-Project*-based BSP is access contolled repositories.
-Please contact your Intel representatives for access.
+Please contact your Intel representatives for release tag.
 
 Make a new directory.
     
@@ -93,11 +93,11 @@ Make a new directory.
 Git clone the repo manifest. This manifest will help user to clone all 
 the required repositories to create the base bsp.
 
-    $ repo init -u git@github.com:otcshare/IOTG-Yocto-ESE-Manifest.git -b refs/heads/master -g all
+    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/heads/master -g all
    
 or depend on your release;
    
-    $ repo init -u git@github.com:otcshare/IOTG-Yocto-ESE-Manifest.git -b refs/tags/release-15 -g all
+    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/tags/release-15 -g all
  
 Pull the repository meta-layers (-j4 for simultaneous downloads, increase for more).
 

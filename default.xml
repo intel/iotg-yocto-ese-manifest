@@ -23,31 +23,31 @@
   <project name="openembedded-core"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling"
-           revision="5f644082fc3c2bbd89b898d5ca7cd4414cda4a64" >
+           revision="72431ee8de5e3a53d259cebf420a7713ac9e1f14" >
   </project>
 
   <project name="meta-openembedded"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/meta-openembedded"
-           revision="2a5c534d2b9f01e9c0f39701fccd7fc874945b1c" >
+           revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" >
   </project>
 
   <project name="bitbake"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/bitbake"
-           revision="89fc9450abefd682266efcbfa031d1ef115ff1a7" >
+           revision="a394eeec6aeb98c6395cb5da2036ce936bdaa0a0" >
   </project>
 
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="3cf8482e432e5daf0b75394152e2c229b3a08d36" >
+           revision="b4e5d33affeaa223459c0935a853485137b4591d" >
   </project>
 
   <project name="meta-virtualization"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-virtualization"
-           revision="ff997b6b3ba800978546098ab3cdaa113b6695e1" >
+           revision="92cd3467502bd27b98a76862ca6525ce425a8479" >
   </project>
 
   <project name="mendersoftware/meta-mender.git"
@@ -65,19 +65,19 @@
   <project name="intel/iotg-yocto-ese-main.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
-           revision="49159399331d2a71cff97863ea162a579faf08e0" >
+	   revision="e664d0d81a59838979a45a57bab8d51e612cca16" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese"
-           revision="c7483c973910def29a9fbb09e50dedec51415e74" >
+           revision="953f1f00f77d3c7d3b26e203c801959b32c920ad" >
   </project>
 
   <project name="intel/iotg-yocto-ese-bsp.git"
            remote="ssh-github"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp"
-           revision="c2da2e7a95a1b069d28c3d7ff65b305c54fc59e2" >
+           revision="321db82a22a75e920f4bd42b2db4cf6b1f37ce85" >
   </project>
 
   <project name="meta-security"
@@ -95,31 +95,31 @@
   <project name="intel/iotg-yocto-ese-build.git"
            remote="ssh-github"
            path="build"
-           revision="966db044b2fe857071698ae02a56115961fcfe8a" >
+           revision="917d9e67068e1655e27766deda5971210f71e776" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-5.4"
-           revision="e54641516247a77adbc3c314ddf1f7e8f7cc2787" >
+           revision="17d8b8b5eafbe411bb5657cc11fcc29e4821a2c9" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-rt-5.4"
-           revision="6f0f7e5dd27c1798d0d58ccdf3cccebf79aef8a0" >
+           revision="db8c85db08a41d88738f4ddd2779567457d17e1d" >
   </project>
 
   <project name="mesa/drm.git"
            remote="freedesktop"
            path="managed/libdrm"
-           revision="fc479e133eee7e0f169080d735fe9a360453820b" >
+           revision="d034db142d2e99ae30edf2dd766b9e8faaa9aec6" >
   </project>
 
   <project name="mesa/mesa.git"
            remote="freedesktop"
            path="managed/mesa"
-           revision="d377d844969b18264d3eeeeb1bbdf37131c69791" >
+           revision="b06f3c52bfb63c18686edca2fb6f667c44533df8" >
   </project>
 
   <project name="kraj/meta-clang.git"
@@ -131,6 +131,31 @@
   <project name="meta-dpdk"
            path="intel-embedded-system-enabling/meta-dpdk"
            remote="git.yoctoproject.org"
-           revision="dd993590cd75f354da5e3bc8edce4063a2e445d0" >
+	   revision="c1b8e5e910950e9ce02fdadbc92a42a24e95e115" >
   </project>
+
+  <project name="intel/mainline-tracking.git"
+	   path="managed/linux-intel-ese-mlt"
+	   remote="github.com"
+           revision="02d758188a3a741048351ff7d1419c00c7d9e145" >
+   </project>
+
+   <project name="yocto-kernel-cache"
+	    path="managed/yocto-kernel-cache-5.4"
+	    remote="git.yoctoproject.org"
+	    revision="4fa886b20f2e2e9988423b34ed6d2d443282067d" >
+   </project>
+
+   <project name="yocto-kernel-cache"
+	    path="managed/yocto-kernel-cache-5.10"
+	    remote="git.yoctoproject.org"
+	    revision="1afcd02eb057cfe92214867fcabc29c06b2ff10b" >
+    </project>
+    
+    <project name="yocto-kernel-cache"
+	     path="managed/yocto-kernel-cache"
+	     remote="git.yoctoproject.org"
+	     revision="31b3b36e28db3d396de8ae6df8d62dc6d28471c9" >
+     </project>
+
 </manifest>
