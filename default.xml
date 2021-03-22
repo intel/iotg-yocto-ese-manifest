@@ -8,7 +8,7 @@
            alias="origin"
            fetch="git://git.yoctoproject.org" />
 
-  <remote  name="ssh-github"
+  <remote  name="github-ssh"
            alias="origin"
            fetch="ssh://git@github.com" />
 
@@ -23,31 +23,31 @@
   <project name="openembedded-core"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling"
-           revision="72431ee8de5e3a53d259cebf420a7713ac9e1f14" >
+           revision="b9296bdeaacc1dce97aac9c9bf0d70555bb36646" >
   </project>
 
   <project name="meta-openembedded"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/meta-openembedded"
-           revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" >
+           revision="144077083457ccb75700777d5e6b1da9aaff01aa" >
   </project>
 
   <project name="bitbake"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/bitbake"
-           revision="a394eeec6aeb98c6395cb5da2036ce936bdaa0a0" >
+           revision="18e1957337fd9f06bc673d28dd4f8277321d07bc" >
   </project>
 
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="b4e5d33affeaa223459c0935a853485137b4591d" >
+           revision="a01cbe26e343f2c5cd42e134b05d3e99c73ad9e6" >
   </project>
 
   <project name="meta-virtualization"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-virtualization"
-           revision="92cd3467502bd27b98a76862ca6525ce425a8479" >
+           revision="ff997b6b3ba800978546098ab3cdaa113b6695e1" >
   </project>
 
   <project name="mendersoftware/meta-mender.git"
@@ -59,31 +59,31 @@
   <project name="meta-qt5/meta-qt5.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-qt5"
-           revision="0d8eb956015acdea7e77cd6672d08dce18061510" >
+           revision="0e7015f7a86dda995a39662edbb5c26da647c496" >
   </project>
 
   <project name="intel/iotg-yocto-ese-main.git"
-           remote="ssh-github"
+           remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main"
-	   revision="e664d0d81a59838979a45a57bab8d51e612cca16" >
+	   revision="36f2ee18809670153131ed1dc1bb2edb440f61e3" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
-           remote="ssh-github"
+           remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese"
-           revision="953f1f00f77d3c7d3b26e203c801959b32c920ad" >
+           revision="f3c13bcb9f5ef1afcf55400dfd0e7c9755969a75" >
   </project>
 
   <project name="intel/iotg-yocto-ese-bsp.git"
-           remote="ssh-github"
+           remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp"
-           revision="321db82a22a75e920f4bd42b2db4cf6b1f37ce85" >
+           revision="898624221a0522150024dbb86b8b417a50025f09" >
   </project>
 
   <project name="meta-security"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-security"
-           revision="c74cc97641fd93e0e7a4383255e9a0ab3deaf9d7" >
+           revision="213e1f95b0530fb0b361d0b3c820d719d94b3916" >
   </project>
 
   <project name="intel/meta-intel-sgx.git"
@@ -93,69 +93,44 @@
   </project>
 
   <project name="intel/iotg-yocto-ese-build.git"
-           remote="ssh-github"
+           remote="github.com"
            path="build"
-           revision="917d9e67068e1655e27766deda5971210f71e776" >
+           revision="73f136384d2de36a0d08214d14b23b29aa0356e8" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-5.4"
-           revision="17d8b8b5eafbe411bb5657cc11fcc29e4821a2c9" >
+           revision="698dc049f6493327076986587f9d0016d6f97a20" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-rt-5.4"
-           revision="db8c85db08a41d88738f4ddd2779567457d17e1d" >
+           revision="e00ce2dbe204df8675b04a820f6a4e6fc0f784b1" >
   </project>
 
   <project name="mesa/drm.git"
            remote="freedesktop"
            path="managed/libdrm"
-           revision="d034db142d2e99ae30edf2dd766b9e8faaa9aec6" >
+           revision="77687f8d6ea321998b87f87433db1fea7518b8bf" >
   </project>
 
   <project name="mesa/mesa.git"
            remote="freedesktop"
            path="managed/mesa"
-           revision="b06f3c52bfb63c18686edca2fb6f667c44533df8" >
+           revision="a55dc276a38fa8d146386079459cc85c8a7647ae" >
   </project>
 
   <project name="kraj/meta-clang.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-clang"
-           revision="e63d6f9abba5348e2183089d6ef5ea384d7ae8d8" >
+           revision="88685736c4a2f27bc72e398c66d5acc4e5628ffa" >
   </project>
 
   <project name="meta-dpdk"
            path="intel-embedded-system-enabling/meta-dpdk"
            remote="git.yoctoproject.org"
-	   revision="c1b8e5e910950e9ce02fdadbc92a42a24e95e115" >
+	   revision="7a9ee23de79a631127ed5ca3c45e08ec876eda98" >
   </project>
-
-  <project name="intel/mainline-tracking.git"
-	   path="managed/linux-intel-ese-mlt"
-	   remote="github.com"
-           revision="02d758188a3a741048351ff7d1419c00c7d9e145" >
-   </project>
-
-   <project name="yocto-kernel-cache"
-	    path="managed/yocto-kernel-cache-5.4"
-	    remote="git.yoctoproject.org"
-	    revision="4fa886b20f2e2e9988423b34ed6d2d443282067d" >
-   </project>
-
-   <project name="yocto-kernel-cache"
-	    path="managed/yocto-kernel-cache-5.10"
-	    remote="git.yoctoproject.org"
-	    revision="1afcd02eb057cfe92214867fcabc29c06b2ff10b" >
-    </project>
-    
-    <project name="yocto-kernel-cache"
-	     path="managed/yocto-kernel-cache"
-	     remote="git.yoctoproject.org"
-	     revision="31b3b36e28db3d396de8ae6df8d62dc6d28471c9" >
-     </project>
-
 </manifest>
