@@ -44,7 +44,7 @@ The BSPs contained in this layer are compatible with the Yocto Project
 as per the requirements listed here:
 
     a. Dunfell
-    b. Zeus
+    b. Gatesgarth
 
 
 III. Getting Started with BSP
@@ -93,11 +93,11 @@ Make a new directory.
 Git clone the repo manifest. This manifest will help user to clone all 
 the required repositories to create the base bsp.
 
-    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/heads/master -g all
+    $ repo init -u https://github.com/intel/iotg-yocto-ese-manifest.git -b refs/heads/master -g all
    
 or depend on your release;
    
-    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/tags/release-15 -g all
+    $ repo init -u https://github.com/intel/iotg-yocto-ese-manifest.git -b refs/tags/release-15 -g all
  
 Pull the repository meta-layers (-j4 for simultaneous downloads, increase for more).
 
@@ -110,11 +110,11 @@ Make a branch.
 Start build process.
 
     $ cd <work_dir>/build
-    $ . ../intel-embedded-system-enabling-pre/oe-init-build-env .
+    $ . ../intel-embedded-system-enabling/oe-init-build-env .
 
 Run bitbake compilation.
 
-    $ bitbake multiconfig:x86:core-image-sato-sdk
+    $ bitbake mc:x86:core-image-sato-sdk
 
 Additional notes.
 
@@ -144,10 +144,10 @@ a. Create a Bootable Image
 --------------------------
 
 Download the latest bmaptool release from 
-https://github.com/intel/bmaptools/releases into the Ubuntu* host 
+https://github.com/intel/bmap-tools/releases/ into the Ubuntu* host 
 system, where you build the Yocto Projectbased image.
 
-    $ curl -Lo bmaptool https://github.com/01org/bmaptools/releases/download/v3.4/bmaptool && chmod +x bmaptool
+    $ git clone https://github.com/intel/bmap-tools.git
 
 Ensure that Python* module six is installed on the system.
 
@@ -157,7 +157,7 @@ Insert the USB flash drive and ensure all partitions of the target device
 Run the following command (assume the USB flash drive is using /dev/sdc)
 to generate a bootable USB flash drive.
 
-    $ sudo ./bmaptool copy --bmap <path>/core-image-sato-xxx-date>.wic.bmap <path>/core-image-sato-<date>.wic /dev/sdc
+    $ sudo ./bmap-tools/bmaptool copy --bmap <path>/core-image-sato-xxx-date>.wic.bmap <path>/core-image-sato-<date>.wic /dev/sdc
 
 b. Booting Up Intel Platform
 ----------------------------
