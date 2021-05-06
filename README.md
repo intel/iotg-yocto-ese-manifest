@@ -203,3 +203,41 @@ The LXC download location has changed, causing build errors, to fix the error:
   http://linuxcontainers.org/downloads/${BPN}/${BPN}-${PV}.tar.gz
 
 This will resolve the download problem.
+
+* Pregenerated UEFI Secure Boot key provider (secure-boot-certificates-pregenerated) causing shim build failures (release-64_cml-mr2)
+
+The shim recipe assumes the Machine Owner Key and Database keys in DER encoded X509 format is provided, this is not the case
+in secure-boot-certificates-pregenerated. This can be fixed by applying the following patch to meta-intel-ese-main directory:
+
+Note: You may want to edit the file directly instead or download a copy of this file, since github markdown language display
+interferes with tab spacings when shown in the browser.
+
+```
+diff --git a/recipes-bsp/shim/shim_git.bb b/recipes-bsp/shim/shim_git.bb
+index dcae03a..3bf22b5 100644
+--- a/recipes-bsp/shim/shim_git.bb
++++ b/recipes-bsp/shim/shim_git.bb
+@@ -32,13 +32,17 @@ inherit gnu-efi
+ do_configure[depends] += "virtual/secure-boot-certificates:do_deploy"
+ do_configure_append() {
+ 	cp ${DEPLOY_DIR_IMAGE}/secure-boot-certificates/yocto.crt \
+-	${DEPLOY_DIR_IMAGE}/secure-boot-certificates/yocto.cer \
+ 	${DEPLOY_DIR_IMAGE}/secure-boot-certificates/yocto.key \
+ 	${DEPLOY_DIR_IMAGE}/secure-boot-certificates/shim.crt \
+ 	${DEPLOY_DIR_IMAGE}/secure-boot-certificates/shim.key \
+-	${DEPLOY_DIR_IMAGE}/secure-boot-certificates/shim.cer .
++	.
+ 	openssl pkcs12 -export -in shim.crt -inkey shim.key -out shim.p12 -passout pass:
+ 
++	# X509 DER form
++	for name in shim yocto; do
++		openssl x509 -outform DER -in "${name}.crt" -out "${name}.cer"
++	done
++
+ 	# ese sbat marker append, should really be in UTF-8 specifically
+ 	mkdir -p ${B}/data
+ 	echo 'shim.ese,1,ESE,${PN},${PV},https://github.com/intel/iotg-yocto-ese-main' > ${B}/data/sbat.ese.csv
+```
+
+This causes the shim recipe to no longer depend on the DER certificates, instead generate them from the PEM formatted X509
+certs.
