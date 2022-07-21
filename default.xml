@@ -25,7 +25,7 @@
   <project name="meta-openembedded"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/meta-openembedded"
-           revision="166ef8dbb14ad98b2094a77fcf352f6c63d5abf2" >
+           revision="0b78362654262145415df8211052442823b9ec9b" >
   </project>
 
   <project name="bitbake"
@@ -37,7 +37,7 @@
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="2f1c89140e6719651b06fffffaeb047f02b5a124" >
+           revision="df622318d8d9739dca491653049a01b90ae34dc1" >
   </project>
 
   <project name="meta-virtualization"
@@ -61,31 +61,31 @@
   <project name="intel/iotg-yocto-ese-main.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-main"
-	   revision="8c9be2019845c843804b8e228a6d552681ab318f" >
+	   revision="cc74ddae5e18518d9c7f06d7b57772f687f571c9" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-distro"
-           revision="906134522d79c76da5a6f8197f203b0ed0eb5520" >
+           revision="6adb8eb3cc8564f1ddb8f0dc34e4a21c987a814b" >
   </project>
 
   <project name="intel/iotg-yocto-ese-bsp.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-bsp"
-           revision="ea788b96df9d1bbab5f6803d5b02b49905610f5a" >
+           revision="79cfb30dc1b02bf80a2b142dab3c48c69f7cefe1" >
   </project>
 
   <project name="meta-security"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-security"
-           revision="93f2146211001ee3cf697d8428969cc3069ed6ba" >
+           revision="d3d8e62bf1caa3870a504c0addcfd200b33c189f" >
   </project>
 
   <project name="intel/meta-intel-sgx.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-sgx"
-           revision="53a3a770befba87c58ae6a878798e92e175d7077" >
+           revision="a52006896eedea53aaae0daa9225c2f0de0557c1" >
   </project>
 
   <project name="intel/iotg-yocto-ese-build.git"
@@ -97,13 +97,13 @@
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-5.4"
-           revision="24a04b07c7bd790c411cfc7e751aee310333f95e" >
+           revision="5aff43cfd677e3700b261a69bf4894dbb817ce91" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
            remote="github.com"
            path="managed/linux-intel-ese-lts-rt-5.4"
-           revision="5608ab5c504f4be4f4ef70b1024116a97ccfcba3" >
+           revision="24b40a59283121652123a03d7e1be6d12ad4e39b" >
   </project>
 
   <project name="kraj/meta-clang.git"
@@ -115,7 +115,7 @@
   <project name="meta-dpdk"
            path="intel-embedded-system-enabling/meta-dpdk"
            remote="git.yoctoproject.org"
-	   revision="ad5fdb707f44dddd276b864d2098c3abede90067" >
+	   revision="09098721b1c78ee812ee287f6b366a47f4b5be87" >
    </project>
 
    <project name="intel/mainline-tracking.git"
@@ -133,49 +133,49 @@
    <project name="intel/linux-intel-lts.git"
 	    path="managed/linux-intel-ese-lts-5.10"
 	    remote="github.com"
-	    revision="6410aba3b60feba47b9713f297d9b3bdb79981f5" >
+	    revision="731f65bb06340eba35c3094bccbecc64b28cff70" >
    </project>
 
    <project name="intel/linux-intel-lts.git"
 	     path="managed/linux-intel-ese-lts-rt-5.10"
 	     remote="github.com"
-             revision="23a61df7e49e8f6d5a061c3bb7d8302c500a1a12" >
+             revision="deed113e54fb91d279d31f5179fa4c2028c366af" >
    </project>
 
    <project name="intel/linux-intel-lts.git"
 	    path="managed/linux-intel-iot-lts-5.15"
 	    remote="github.com"
-	    revision="dd99ad137a00191db75fce5e604e0c790a62e5f8" >
+	    revision="6459628487bc57e1548badbab123e0f0362ecee9" >
    </project>
 
    <project name="intel/linux-intel-lts.git"
 	     path="managed/linux-intel-iot-lts-rt-5.15"
 	     remote="github.com"
-             revision="06b051cebf7e01f82c5324bec984f0f1a7e3411e" >
+             revision="53cac26acdf55971b3cd38ff664fa1682b2dfad2" >
    </project>
 
    <project name="yocto-kernel-cache"
 	    path="managed/yocto-kernel-cache-5.4"
 	    remote="git.yoctoproject.org"
-	    revision="6a12bea7312868626062fe8206ce3c5bcb7c9101" >
+	    revision="3fecb08507e286d1458497faaf31d1a07cc7d373" >
    </project>
 
    <project name="yocto-kernel-cache"
 	    path="managed/yocto-kernel-cache-5.10"
 	    remote="git.yoctoproject.org"
-	    revision="7767ab05bd3e525a287a7f9bfd780005b5eb25a3" >
+	    revision="b368b4c1c8ee0e0e7573caa7f1596c3385ad855f" >
     </project>
 
    <project name="yocto-kernel-cache"
 	    path="managed/yocto-kernel-cache-5.15"
 	    remote="git.yoctoproject.org"
-	    revision="529199264800b52ae173fc91241c8e64615850e3" >
+	    revision="37891dc371e83a3451781dd81a8a85cccd60084b" >
     </project>
 
     <project name="yocto-kernel-cache"
 	     path="managed/yocto-kernel-cache"
 	     remote="git.yoctoproject.org"
-	     revision="942a3a2cc192a8b2e38a7fef4a40249c79f5c9f5" >
+	     revision="a27d3db5aced8ac18b52b72e2cecdc6ea57806bc" >
      </project>
 
 </manifest>
