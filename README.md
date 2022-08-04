@@ -45,7 +45,13 @@ as per the requirements listed here:
 
     a. Dunfell
     b. Hardknott
+    c. Kirkstone
 
+Note: Yocto meta-* layer, kirkstone branch in not backward compatible with
+      meta-* layer dunfell or hardknott branch.
+      All tags starting from release-102_* onwards are based on Yocto Project
+      Kirkstone release. All EHL/TGL/CML tags below release-102_* are based on
+      Yocto Project Dunfell and ADL-S/P tags are Yocto Project Hardknott release.
 
 III. Getting Started with BSP
 ====================================
@@ -60,9 +66,20 @@ Please skip this steps if this was not your first time building a
 Yocto-Project*-based BSP. As a user you will need to install necessary
 toolchain to build the Yocto Project*-based BSP.
 
-    $ sudo apt-get -y install socat gawk wget git-core diffstat unzip texinfo \
-       build-essential chrpath libsdl1.2-dev xterm libncurses5-dev patchutils 
+    $ sudo apt-get install gawk wget diffstat unzip texinfo build-essential \
+      chrpath socat cpio python3 python3-pip python3-pexpect xz-utils \
+      debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa \
+      libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev
     $ sudo apt-get install connect-proxy
+
+    Dunfell/Hardknott build
+
+    $ sudo apt-get install git-core gcc-multilib
+
+    Kirkstone build
+
+    $ sudo apt-get install git gcc zstd liblz4-tool
+
 
 b. Obtain Repo Sources
 ----------------------
@@ -93,11 +110,11 @@ Make a new directory.
 Git clone the repo manifest. This manifest will help user to clone all 
 the required repositories to create the base bsp.
 
-    $ repo init -u git@github.com:otcshare/IOTG-Yocto-ESE-Manifest.git -b refs/heads/master -g all
+    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/heads/master -g all
    
 or depend on your release;
    
-    $ repo init -u git@github.com:otcshare/IOTG-Yocto-ESE-Manifest.git -b refs/tags/release-15 -g all
+    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/tags/release-106_adl_p-mr1 -g all
  
 Pull the repository meta-layers (-j4 for simultaneous downloads, increase for more).
 
@@ -133,6 +150,15 @@ d. To set LTS Kernel v5.10 as a default kernel
 e. To set LTS RT v5.10 as a default kernel
 
     $ bitbake mc:x86-rt-2020:core-image-sato-sdk
+
+f. To set LTS Kernel v5.15 as a default kernel
+
+    $ bitbake mc:x86-2021:core-image-sato-sdk
+
+g. To set LTS RT v5.15 as a default kernel
+
+    $ bitbake mc:x86-rt-2021:core-image-sato-sdk
+
 
 Additional notes.
 
@@ -199,3 +225,4 @@ V. Maintainer
 
 jonathan.yong@intel.com
 Kartikey.Rameshbhai.Parmar@intel.com
+preeti.sachan@intel.com
