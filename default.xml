@@ -61,7 +61,7 @@
   <project name="intel/iotg-yocto-ese-main.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-main"
-	   revision="bf5bf8e3022a75aed4d0592e15a3f832c5d35ae6" >
+	   revision="2dd883e2c5d99fd111a70da488cf33a21cbca439" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
