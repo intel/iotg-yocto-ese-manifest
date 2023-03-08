@@ -19,13 +19,13 @@
   <project name="openembedded-core"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling"
-           revision="4760fac939a6204e3cb7dcd3699cd9a2508f9dee" >
+           revision="ada5e64a97d5f269886772540e0bb0c324088b21" >
   </project>
 
   <project name="meta-openembedded"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/meta-openembedded"
-           revision="1f31570d0795da90083d1dbf28127c90908e30ee" >
+           revision="a8055484f2829e8dfd03d5c8520b2c611aa7ebd2" >
   </project>
 
   <project name="bitbake"
@@ -37,19 +37,19 @@
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="a9242002cb14489013d536be010a243d6da01dd2" >
+           revision="f9e2e05f0d4896f4cfe674cbbc08294075ca9a04" >
   </project>
 
   <project name="meta-virtualization"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-virtualization"
-           revision="79c584eaaa5e1443a6449cdfddd1913ee6b162a3" >
+           revision="927537108bcf2b98859512ce3eae59a73439994d" >
   </project>
 
   <project name="mendersoftware/meta-mender.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-mender"
-           revision="5c0b33bc5dcbdf9e8a28fd2b793fead48dde2b57" >
+           revision="bd64bbc28517d1ab07bfa225f8cad16beda167aa" >
   </project>
 
   <project name="meta-qt5/meta-qt5.git"
@@ -61,19 +61,19 @@
   <project name="intel/iotg-yocto-ese-main.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-main"
-	   revision="2dd883e2c5d99fd111a70da488cf33a21cbca439" >
+	   revision="2b0b4f37ce7b803bb92050d04b8c6d7061c60149" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-distro"
-           revision="d3c9c8536fdfd3fc6871ddaec1dd3a563b6e6712" >
+           revision="1bf4a8b5287cfbd5a7f728788bcce783a51c55f4" >
   </project>
 
   <project name="intel/iotg-yocto-ese-bsp.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-bsp"
-           revision="68dc0c7784d6f16fcbfb195936e278931bd4cac8" >
+           revision="bf342b713b139a9310d393623a930ed78156ccfb" >
   </project>
 
   <project name="meta-security"
@@ -91,7 +91,7 @@
   <project name="intel/iotg-yocto-ese-build.git"
            remote="github.com"
            path="build"
-           revision="7b4ef2cf42fa5e5ad564a948780ccc929a0bc7d5" >
+           revision="b489138f8a6352025b5df99dcde3b29dd4e8bed0" >
   </project>
 
   <project name="intel/linux-intel-lts.git"
@@ -133,25 +133,25 @@
    <project name="intel/linux-intel-lts.git"
 	    path="managed/linux-intel-ese-lts-5.10"
 	    remote="github.com"
-	    revision="fa972093e338581da9c895fdb8151b9247de3ba3" >
+	    revision="1059c5a0a6505942150745de2046ef5943a8ffe3" >
    </project>
 
    <project name="intel/linux-intel-lts.git"
 	     path="managed/linux-intel-ese-lts-rt-5.10"
 	     remote="github.com"
-             revision="874a30aced5aae7e9c528fe6bc2eb9b8acb08da8" >
+             revision="c305cbd4c3e154a7a9e40da9ef293d52461fda8a" >
    </project>
 
    <project name="intel/linux-intel-lts.git"
 	    path="managed/linux-intel-iot-lts-5.15"
 	    remote="github.com"
-	    revision="54bfba91c6cef3b7cb74f53afb772313e2fd77af" >
+	    revision="4a7f4c12c2d52bb831f452fe053d39cd26590ead" >
    </project>
 
    <project name="intel/linux-intel-lts.git"
 	     path="managed/linux-intel-iot-lts-rt-5.15"
 	     remote="github.com"
-             revision="c10185e6a27cad77032a131f94a3ba75c654e4d8" >
+             revision="ab99e395f4e4274133aebbb9878f7a65462700a0" >
    </project>
 
    <project name="yocto-kernel-cache"
@@ -163,19 +163,19 @@
    <project name="yocto-kernel-cache"
 	    path="managed/yocto-kernel-cache-5.10"
 	    remote="git.yoctoproject.org"
-	    revision="241c98f9a44c94336cc0731219a25155a9b2b094" >
+	    revision="a4d33186b2f3b4c22b1fc57db5f161168863080f" >
     </project>
 
    <project name="yocto-kernel-cache"
 	    path="managed/yocto-kernel-cache-5.15"
 	    remote="git.yoctoproject.org"
-	    revision="ed03f6685c020866c2f32c4b14c4f343792146d5" >
+	    revision="72756ee16d7230f04fb6bbf0bb115e32a9d73d8d" >
     </project>
 
     <project name="yocto-kernel-cache"
 	     path="managed/yocto-kernel-cache"
 	     remote="git.yoctoproject.org"
-	     revision="d09b1c8e69c4e4f8327e8958f4fc327561c07970" >
+	     revision="b7fc5d5cecaad5d97164bac8db5b5ee72f563bb0" >
      </project>
 
 </manifest>
