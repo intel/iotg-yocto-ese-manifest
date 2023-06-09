@@ -61,13 +61,13 @@
   <project name="intel/iotg-yocto-ese-main.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-main"
-	   revision="5d83d49111cc29b850fe5cdcb7fd318626dc57d6" >
+	   revision="f7ef2e7330d19ecc28ce2f38b0b5d6a3a8e0798a" >
   </project>
 
   <project name="intel/iotg-yocto-ese.git"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-distro"
-           revision="b405f22cadc65e6bc712c1113fab4002862d275e" >
+           revision="33a03c2d8c2bdcfb77b5eee4a67d7969083eea3e" >
   </project>
 
   <project name="intel/iotg-yocto-ese-bsp.git"
