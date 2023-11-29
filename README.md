@@ -48,10 +48,9 @@ as per the requirements listed here:
     c. Kirkstone
 
 Note: Yocto meta-* layer, kirkstone branch in not backward compatible with
-      meta-* layer dunfell or hardknott branch.
-      All tags starting from release-102_* onwards are based on Yocto Project
-      Kirkstone release. All EHL/TGL/CML tags below release-102_* are based on
-      Yocto Project Dunfell and ADL-S/P tags are Yocto Project Hardknott release.
+      meta-* layer dunfell or hardknott branch. All tags starting from
+      staging/release-99 onwards are based on Yocto Project Kirkstone release.
+
 
 III. Getting Started with BSP
 ====================================
@@ -110,11 +109,11 @@ Make a new directory.
 Git clone the repo manifest. This manifest will help user to clone all 
 the required repositories to create the base bsp.
 
-    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/heads/master -g all
+    $ repo init -u git@github.com:otcshare/staging-iotg-yocto-ese-manifest.git -b refs/heads/master -g all
    
 or depend on your release;
    
-    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/tags/release-142_ehl-mr7 -g all
+    $ repo init -u git@github.com:otcshare/staging-iotg-yocto-ese-manifest.git -b refs/tags/staging/release-106 -g all
  
 Pull the repository meta-layers (-j4 for simultaneous downloads, increase for more).
 
@@ -131,23 +130,31 @@ Start build process.
 
 Run bitbake compilation.
 
-a. To set Mainline Tracking Kernel as a default kernel
+a. To set LTS kernel v5.4 as a default kernel
+
+    $ bitbake mc:x86:core-image-sato-sdk
+
+b. To set LTS RT v5.4 as a default kernel
+
+    $ bitbake mc:x86-rt:core-image-sato-sdk
+
+c. To set Mainline Tracking Kernel v5.10 as a default kernel
 
     $ bitbake mc:x86-mlt:core-image-sato-sdk
 
-b. To set LTS Kernel v5.10 as a default kernel
+d. To set LTS Kernel v5.10 as a default kernel
     
     $ bitbake mc:x86-2020:core-image-sato-sdk
 
-c. To set LTS RT v5.10 as a default kernel
+e. To set LTS RT v5.10 as a default kernel
 
     $ bitbake mc:x86-rt-2020:core-image-sato-sdk
 
-d. To set LTS Kernel v5.15 as a default kernel
+f. To set LTS Kernel v5.15 as a default kernel
 
     $ bitbake mc:x86-2021:core-image-sato-sdk
 
-e. To set LTS RT v5.15 as a default kernel
+g. To set LTS RT v5.15 as a default kernel
 
     $ bitbake mc:x86-rt-2021:core-image-sato-sdk
 
