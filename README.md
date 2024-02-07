@@ -109,11 +109,11 @@ Make a new directory.
 Git clone the repo manifest. This manifest will help user to clone all 
 the required repositories to create the base bsp.
 
-    $ repo init -u git@github.com:otcshare/staging-iotg-yocto-ese-manifest.git -b refs/heads/master -g all
+    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/heads/master -g all
    
 or depend on your release;
    
-    $ repo init -u git@github.com:otcshare/staging-iotg-yocto-ese-manifest.git -b refs/tags/staging/release-106 -g all
+    $ repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/tags/release-145_rpl_s-mr2 -g all
  
 Pull the repository meta-layers (-j4 for simultaneous downloads, increase for more).
 
@@ -157,6 +157,15 @@ f. To set LTS Kernel v5.15 as a default kernel
 g. To set LTS RT v5.15 as a default kernel
 
     $ bitbake mc:x86-rt-2021:core-image-sato-sdk
+
+h. To set LTS Kernel v6.1 as a default kernel
+
+    $ bitbake mc:x86-2022:core-image-sato-sdk
+
+i. To set LTS RT v6.1 as a default kernel
+
+    $ bitbake mc:x86-rt-2022:core-image-sato-sdk
+
 
 Additional notes.
 
