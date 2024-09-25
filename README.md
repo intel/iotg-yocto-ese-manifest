@@ -9,6 +9,11 @@ corresponding sections below for details.
 Notes
 =====
 
+This is a snapshot of the latest Yocto Project BSP on Intel IoT platforms that was last
+successfully validated. Older Intel platforms are supported but not fully validated. It
+is recommended to use newer snapshots if possible to resolve CVEs discovered in older
+snapshots. CVEs in Older snapshots are not retroactively fixed.
+
 There are recent changes in the BSP:
 
     a. Pre-generated keys for Secure Boot.
@@ -43,9 +48,7 @@ II. Yocto Project Compatibility
 The BSPs contained in this layer are compatible with the Yocto Project
 as per the requirements listed here:
 
-    a. Dunfell
-    b. Hardknott
-    c. Kirkstone
+    a. Kirkstone
 
 Note: Yocto meta-* layer, kirkstone branch in not backward compatible with
       meta-* layer dunfell or hardknott branch. All tags starting from
@@ -68,16 +71,8 @@ toolchain to build the Yocto Project*-based BSP.
     $ sudo apt-get install gawk wget diffstat unzip texinfo build-essential \
       chrpath socat cpio python3 python3-pip python3-pexpect xz-utils \
       debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa \
-      libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev
-    $ sudo apt-get install connect-proxy
-
-    Dunfell/Hardknott build
-
-    $ sudo apt-get install git-core gcc-multilib
-
-    Kirkstone build
-
-    $ sudo apt-get install git gcc zstd liblz4-tool
+      libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev \
+      screen git zstd liblz4-tool connect-proxy
 
 
 b. Obtain Repo Sources
@@ -109,11 +104,11 @@ Make a new directory.
 Git clone the repo manifest. This manifest will help user to clone all 
 the required repositories to create the base bsp.
 
-    $ repo init -u git@github.com:otcshare/staging-iotg-yocto-ese-manifest.git -b refs/heads/master -g all
+    $ repo init -u https://github.com/intel/iotg-yocto-ese-manifest.git -b refs/heads/master -g all
    
 or depend on your release;
    
-    $ repo init -u git@github.com:otcshare/staging-iotg-yocto-ese-manifest.git -b refs/tags/staging/release-106 -g all
+    $ repo init -u https://github.com/intel/iotg-yocto-ese-manifest.git -b refs/tags/staging/release-150 -g all
  
 Pull the repository meta-layers (-j4 for simultaneous downloads, increase for more).
 
@@ -130,47 +125,11 @@ Start build process.
 
 Run bitbake compilation.
 
-a. To set LTS kernel v5.4 as a default kernel
-
-    $ bitbake mc:x86:core-image-sato-sdk
-
-b. To set LTS RT v5.4 as a default kernel
-
-    $ bitbake mc:x86-rt:core-image-sato-sdk
-
-c. To set Mainline Tracking Kernel v5.10 as a default kernel
-
-    $ bitbake mc:x86-mlt:core-image-sato-sdk
-
-d. To set LTS Kernel v5.10 as a default kernel
- 
-    $ bitbake mc:x86-2020:core-image-sato-sdk
-
-e. To set LTS RT v5.10 as a default kernel
-
-    $ bitbake mc:x86-rt-2020:core-image-sato-sdk
-
-f. To set LTS Kernel v5.15 as a default kernel
-
-    $ bitbake mc:x86-2021:core-image-sato-sdk
-
-g. To set LTS RT v5.15 as a default kernel
-
-    $ bitbake mc:x86-rt-2021:core-image-sato-sdk
-
-h. To set LTS Kernel v6.1 as a default kernel
-
-    $ bitbake mc:x86-2022:core-image-sato-sdk
-
-i. To set LTS RT v6.1 as a default kernel
-
-    $ bitbake mc:x86-rt-2022:core-image-sato-sdk
-
-j. To set LTS Kernel v6.6 as a default kernel
+a. To set LTS Kernel v6.6 as a default kernel
 
     $ bitbake mc:x86-2023:core-image-sato-sdk
 
-k. To set LTS RT v6.6 as a default kernel
+b. To set LTS RT v6.6 as a default kernel
 
     $ bitbake mc:x86-rt-2023:core-image-sato-sdk
 
@@ -178,7 +137,7 @@ k. To set LTS RT v6.6 as a default kernel
 Additional notes.
 
 a. To change provided kernel to your preferred kernel
-   
+
     $ cd <work_dir>/build/
     $ vi conf/multiconfig/x86.conf
 
@@ -197,18 +156,16 @@ IV. Booting Up BSP
 =================
 
 Intel recommends using "bmaptool" to prepare a bootable image with the
-USB* flash drive. 
+USB* flash drive.
 
 a. Create a Bootable Image
 --------------------------
 
 Download the latest bmaptool release from 
-https://github.com/intel/bmaptools/releases into the Ubuntu* host 
-system, where you build the Yocto Projectbased image.
+https://github.com/yoctoproject/bmaptool into the Ubuntu* host
+system, where you build the Yocto Project based image.
 
-    $ curl -Lo bmaptool https://github.com/01org/bmaptools/releases/download/v3.4/bmaptool && chmod +x bmaptool
-
-Ensure that Python* module six is installed on the system.
+    $ sudo apt-get install bmap-tools
 
 Insert the USB flash drive and ensure all partitions of the target device
 (the USB flash drive in this case) are unmounted.
@@ -216,7 +173,7 @@ Insert the USB flash drive and ensure all partitions of the target device
 Run the following command (assume the USB flash drive is using /dev/sdc)
 to generate a bootable USB flash drive.
 
-    $ sudo ./bmaptool copy --bmap <path>/core-image-sato-xxx-date>.wic.bmap <path>/core-image-sato-<date>.wic /dev/sdc
+    $ sudo bmaptool copy --bmap <path>/core-image-sato-xxx-date>.wic.bmap <path>/core-image-sato-<date>.wic /dev/sdc
 
 b. Booting Up Intel Platform
 ----------------------------
